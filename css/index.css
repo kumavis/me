@@ -1,0 +1,223 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+  color: #526066;
+  background: #1D1A1A;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+
+/*
+ * -- Layout Styles --
+ */
+.l-content {
+    margin: 0 auto;
+}
+
+.l-box {
+    padding: 0.5em 2em;
+}
+
+.github-button {
+  display: inline-block;
+  background: url(../assets/GitHub-Mark-Light-32px.png) 0 0 no-repeat;
+  width: 32px;
+  height: 32px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*
+ * -- MENU STYLES --
+ * Make the menu have a very faint box-shadow.
+ */
+#main-menu.pure-menu {
+  box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+  background: #1D1A1A;
+  min-height: 36px;
+}
+
+
+/*
+ * -- BANNER --
+ * The top banner with the headings. By using a combination
+ * of `display: table;` and `display: table-cell;`, we can
+ * vertically center the text.
+ */
+
+.banner {
+  /*background: transparent url('../assets/cell-400x.jpg') 0 0 no-repeat fixed;*/
+  background: transparent url('../assets/tilt-shift-galaxy-1.jpg') 0 0 no-repeat fixed;
+  text-align: center;
+  background-size: cover;
+
+  height: 200px;
+  width: 100%;
+  margin-bottom: 3em;
+  display: table;
+}
+
+.banner > .banner-head {
+  display: table-cell;
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 500;
+}
+.banner > .banner-head:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/*
+ * -- PRICING TABLE WRAPPER --
+ * This element wraps up all the pricing table elements
+ */
+ .project-tables,
+ .information {
+    max-width: 980px;
+    margin: 0 auto;
+ }
+.project-tables {
+    margin-bottom: 3.125em;
+    text-align: center;
+}
+
+/*
+ * -- PRICING TABLE  --
+ * Every pricing table has the .project-table class
+ */
+.project-table {
+  border: 1px solid #ddd;
+  margin: 0 0.5em 2em;
+}
+
+
+/*
+// -- PROJECT HEADER --
+*/
+
+.project-column-header {
+  background: #111;
+  color: #fff;
+}
+.project-column-header > h2 {
+  margin: 0;
+  padding-top: 0.75em;
+  font-size: 2em;
+  font-weight: normal;
+}
+.project-column-category {
+  display: block;
+  margin: 0.2em 0 0;
+  font-size: 1em;
+  font-weight: 100;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+  color: rgba(255, 255, 255, 0.5);
+  *color: #fff;
+}
+
+/*
+// -- PRICING TABLE HEADER COLORS --
+*/
+
+.project-column-1 .project-column-header {
+  background: #777799; // lavender
+}
+
+.project-column-2 .project-column-header {
+  background: #99AABB; // pale blue
+}
+
+.project-column-3 .project-column-header {
+  background: #445555;
+}
+
+
+
+/*
+// -- PROJECT COLUMN LIST --
+*/
+.project-column-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.project-column-list li {
+    padding: 0.8em 0;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e7e7e7;
+    min-height: 1.2em;
+}
+
+
+/*
+ * -- PRICING TABLE BUTTON --
+ * Styles for the "Choose" button at the bottom of a pricing table.
+ * This inherits from Pure Button.
+ */
+.button-choose {
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    border-radius: 2em;
+    font-weight: bold;
+    position: relative;
+    bottom: -1.5em;
+}
+
+.information-head {
+    color: black;
+    font-weight: 500;
+}
+
+.footer {
+    background: #111;
+    color: #888;
+    text-align: center;
+}
+    .footer a {
+        color: #ddd;
+    }
+
+
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, we want to slightly adjust the size of the banner
+ * text and add some vertical space between the various pricing tables
+ */
+@media(min-width: 767px) {
+
+    .banner-head {
+        font-size: 4em;
+    }
+    .project-table {
+        margin-bottom: 0;
+    }
+
+}
+
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+@media (min-width: 480px) {
+    .banner {
+        height: 400px;
+    }
+    .banner-head {
+        font-size: 3em;
+    }
+}
