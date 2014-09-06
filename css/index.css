@@ -22,13 +22,12 @@ p {
 }
 
 .section-project > .section-label {
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 0px;
   padding-top: 1em;
-  width: 4em;
+  width: 100%;
   font-size: 4em;
   color: rgba(255, 255, 255, 0.3);
+  text-align: center;
 }
 
 .github-button {
@@ -117,6 +116,7 @@ p {
  */
 .project-table {
   border: 1px solid #ddd;
+  border-radius: 20px 0;
   margin: 0 0.5em 2em;
 }
 
@@ -126,7 +126,7 @@ p {
 */
 
 .project-column-header {
-  background: #111;
+  background: transparent;
   color: #fff;
 }
 .project-column-header > h2 {
@@ -151,7 +151,7 @@ p {
 // -- PRICING TABLE HEADER COLORS --
 */
 
-.project-column-1 .project-column-header {
+/*.project-column-1 .project-column-header {
   background: #777799; // lavender
 }
 
@@ -160,8 +160,8 @@ p {
 }
 
 .project-column-3 .project-column-header {
-  background: #445555;
-}
+  background: #445555; // green
+}*/
 
 
 
