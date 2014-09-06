@@ -100,21 +100,21 @@ p {
  * -- PRICING TABLE WRAPPER --
  * This element wraps up all the pricing table elements
  */
- .project-tables,
+ .project-cards,
  .information {
     max-width: 980px;
     margin: 0 auto;
  }
-.project-tables {
+.project-cards {
     margin-bottom: 3.125em;
     text-align: center;
 }
 
 /*
  * -- PRICING TABLE  --
- * Every pricing table has the .project-table class
+ * Every pricing table has the .project-card class
  */
-.project-table {
+.project-card {
   border: 1px solid #ddd;
   border-radius: 20px 0;
   margin: 0 0.5em 2em;
@@ -125,17 +125,17 @@ p {
 // -- PROJECT HEADER --
 */
 
-.project-column-header {
+.project-card-header {
   background: transparent;
   color: #fff;
 }
-.project-column-header > h2 {
+.project-card-header > h2 {
   margin: 0;
   padding-top: 0.75em;
   font-size: 2em;
   font-weight: normal;
 }
-.project-column-category {
+.project-card-category {
   display: block;
   margin: 0.2em 0 0;
   font-size: 1em;
@@ -151,15 +151,15 @@ p {
 // -- PRICING TABLE HEADER COLORS --
 */
 
-/*.project-column-1 .project-column-header {
+/*.project-card-1 .project-card-header {
   background: #777799; // lavender
 }
 
-.project-column-2 .project-column-header {
+.project-card-2 .project-card-header {
   background: #99AABB; // pale blue
 }
 
-.project-column-3 .project-column-header {
+.project-card-3 .project-card-header {
   background: #445555; // green
 }*/
 
@@ -168,14 +168,14 @@ p {
 /*
 // -- PROJECT COLUMN LIST --
 */
-.project-column-list {
+.project-card-blurb {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.project-column-list li {
+.project-card-blurb li {
     padding: 0.8em 0;
     background: #f7f7f7;
     border-bottom: 1px solid #e7e7e7;
@@ -221,7 +221,7 @@ p {
     .banner-head {
         font-size: 4em;
     }
-    .project-table {
+    .project-card {
         /*margin-bottom: 0;*/
     }
 
