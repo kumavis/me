@@ -1,7 +1,13 @@
 /*
- * -- BASE STYLES --
- * Most of these are inherited from Base, but I want to change a few.
- */
+// -- COLORS --
+*/
+
+/*
+  background: #777799; // lavender
+  background: #99AABB; // pale blue
+  background: #445555; // green
+*/
+
 body {
   color: #526066;
   background: transparent url('../assets/tilt-shift-galaxy-1.jpg') 0 0 no-repeat fixed;
@@ -14,8 +20,9 @@ p {
 
 
 /*
- * -- Layout Styles --
- */
+// -- Layout Styles --
+*/
+
 .section-project {
   margin: 0 auto;
   background: rgba(29, 26, 26, 0.6);
@@ -40,9 +47,9 @@ p {
 }
 
 /*
- * -- MENU STYLES --
- * Make the menu have a very faint box-shadow.
- */
+// -- MENU STYLES --
+*/
+
 #main-menu.pure-menu {
   box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
   background: #1D1A1A;
@@ -97,29 +104,73 @@ p {
 }
 
 /*
- * -- PRICING TABLE WRAPPER --
- * This element wraps up all the pricing table elements
- */
- .project-cards,
- .information {
-    max-width: 980px;
-    margin: 0 auto;
- }
+// -- PROJECT CARDS WRAPPER --
+*/
+
+.project-cards,
+.information {
+  max-width: 980px;
+  margin: 0 auto;
+}
 .project-cards {
-    margin-bottom: 3.125em;
-    text-align: center;
+  margin-bottom: 3.125em;
+  text-align: center;
 }
 
 /*
- * -- PRICING TABLE  --
- * Every pricing table has the .project-card class
- */
+// -- CARD FLIP --
+*/
+
+.project-card-container:hover .project-card-content.back {
+  -webkit-transform: rotateY(0deg);
+}
+.project-card-container:hover .project-card-content.front {
+  -webkit-transform: rotateY(-180deg);
+}
+
 .project-card {
-  border: 1px solid #ddd;
-  border-radius: 20px 0;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 1000;
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+.project-card-content {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 1s ease-in;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.project-card-content.back {
+  -webkit-transform: rotateY(180deg);
+}
+
+.project-card-content.back
+  background: url('http://www.inserthtml.com/goose.jpeg');
+  overflow: hidden;
+}
+.project-card-content.front {
+  background: #7f37c2;
+}
+
+/*
+// -- PROJECT CARDS  --
+*/
+.project-card-container {
   margin: 0 0.5em 2em;
 }
 
+.project-card-content {
+  border: 1px solid #ddd;
+}
+.project-card-content.front {
+  border-radius: 20px 0;
+}
+.project-card-content.back {
+  border-radius: 0 20px;
+}
 
 /*
 // -- PROJECT HEADER --
@@ -148,55 +199,26 @@ p {
 }
 
 /*
-// -- PRICING TABLE HEADER COLORS --
-*/
-
-/*.project-card-1 .project-card-header {
-  background: #777799; // lavender
-}
-
-.project-card-2 .project-card-header {
-  background: #99AABB; // pale blue
-}
-
-.project-card-3 .project-card-header {
-  background: #445555; // green
-}*/
-
-
-
-/*
 // -- PROJECT COLUMN LIST --
 */
 .project-card-blurb {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .project-card-blurb li {
-    padding: 0.8em 0;
-    background: #f7f7f7;
-    border-bottom: 1px solid #e7e7e7;
-    min-height: 1.2em;
+  padding: 0.8em 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid #e7e7e7;
+  min-height: 1.2em;
 }
 
 
 /*
- * -- PRICING TABLE BUTTON --
- * Styles for the "Choose" button at the bottom of a pricing table.
- * This inherits from Pure Button.
- */
-.button-choose {
-    border: 1px solid #ccc;
-    background: #fff;
-    color: #333;
-    border-radius: 2em;
-    font-weight: bold;
-    position: relative;
-    bottom: -1.5em;
-}
+// -- PAGE FOOTER --
+*/
 
 .information-head {
     color: black;
@@ -218,12 +240,12 @@ p {
  */
 @media(min-width: 767px) {
 
-    .banner-head {
-        font-size: 4em;
-    }
-    .project-card {
-        /*margin-bottom: 0;*/
-    }
+  .banner-head {
+    font-size: 4em;
+  }
+  .project-card-container {
+    /*margin-bottom: 0;*/
+  }
 
 }
 
@@ -232,11 +254,11 @@ p {
  * On phones, we want to reduce the height and font-size of the banner further
  */
 /*@media (min-width: 480px) {
-    .banner-wrapper {
-      height: 400px;
-    }
-    .banner-head {
-      font-size: 3em;
-    }
+  .banner-wrapper {
+    height: 400px;
+  }
+  .banner-head {
+    font-size: 3em;
+  }
 }
 */
