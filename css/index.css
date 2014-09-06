@@ -107,20 +107,19 @@ p {
 // -- PROJECT CARDS WRAPPER --
 */
 
-.project-cards,
-.information {
+.project-cards {
   max-width: 980px;
   margin: 0 auto;
-}
-.project-cards {
-  margin-bottom: 3.125em;
-  text-align: center;
+  padding-bottom: 3.125em;
 }
 
 /*
 // -- CARD FLIP --
 */
 
+.project-card-container {
+  /*min-width: 250px;*/
+}
 .project-card-container:hover .project-card-content.back {
   -webkit-transform: rotateY(0deg);
 }
@@ -171,6 +170,7 @@ p {
 .project-card-header {
   background: transparent;
   color: #fff;
+  text-align: center;
 }
 .project-card-header > h2 {
   margin: 0;
@@ -211,11 +211,6 @@ p {
 /*
 // -- PAGE FOOTER --
 */
-
-.information-head {
-    color: black;
-    font-weight: 500;
-}
 
 .footer {
   background: #111;
