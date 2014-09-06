@@ -147,19 +147,11 @@ p {
   -webkit-transform: rotateY(180deg);
 }
 
-.project-card-content.back
-  background: url('http://www.inserthtml.com/goose.jpeg');
-  overflow: hidden;
-}
-.project-card-content.front {
-  background: #7f37c2;
-}
-
 /*
 // -- PROJECT CARDS  --
 */
 .project-card-container {
-  margin: 0 0.5em 2em;
+  margin-bottom: 2em;
 }
 
 .project-card-content {
