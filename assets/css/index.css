@@ -10,7 +10,7 @@
 
 body {
   color: #526066;
-  background: transparent url('../assets/tilt-shift-galaxy-1.jpg') 0 0 no-repeat fixed;
+  background: transparent url('../img/tilt-shift-galaxy-1.jpg') 0 0 no-repeat fixed;
   background-size: cover;
 }
 
@@ -197,7 +197,7 @@ p {
 
 .github-button {
   display: block;
-  background: url('../assets/GitHub-Mark-Light-32px.png') 0 0 no-repeat;
+  background: url('../img/GitHub-Mark-Light-32px.png') 0 0 no-repeat;
   width: 32px;
   height: 32px;
   margin: 0 auto;
