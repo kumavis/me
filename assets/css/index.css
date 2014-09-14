@@ -15,21 +15,15 @@ html {
   overflow: hidden;
 }
 body {
+  color: #526066;
   height:100%;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
-
-
-body {
-  color: #526066;
-  /*background: transparent url('../img/tilt-shift-galaxy-1.jpg') 0 0 no-repeat fixed;*/
-  /*background-size: cover;*/
-}
-
-p {
-  line-height: 1.6em;
+a {
+  color: white;
+  text-decoration: none;
 }
 
 
@@ -231,17 +225,12 @@ p {
   font-size: 2em;
 }
 
-.contact-container a {
-  color: white;
-  text-decoration: none;
-}
-
-.contact-container i {
-  width: 112px;
+.contact-icon {
+  display: inline-block;
+  width: 120px;
 }
 
 .contact-label {
-  display: inline-block;
   vertical-align: top;
 }
 
@@ -254,6 +243,7 @@ p {
   color: #888;
   text-align: center;
   padding: 0.5em 2em;
+  line-height: 1.6em;
 }
 
 /*
@@ -307,6 +297,15 @@ p {
     height: 260px;
   }
 
+  .contact-sheet {
+    font-size: 1.5em;
+    padding-left: 1em;
+  }
+
+  .contact-icon {
+    width: 4em;
+  }
+
 }
 
 @media (max-height: 400px) {
@@ -321,7 +320,7 @@ p {
 // -- iPHONE 5s VERTICAL --
 */
 
-@media(max-width: 330px) {
+@media(max-width: 400px) {
 
   body {
     background-size: 500px;
@@ -331,6 +330,10 @@ p {
 
   .banner-wrapper {
     height: 850px;
+  }
+
+  .contact-icon {
+    width: 3em;
   }
 
 }
