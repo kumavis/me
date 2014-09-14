@@ -37,12 +37,13 @@ p {
 // -- Layout Styles --
 */
 
-.section-project {
+.page-section {
   margin: 0 auto;
   background: rgba(29, 26, 26, 0.6);
+  color: white;
 }
 
-.section-project > .section-label {
+.page-section > .section-label {
   margin-top: 0px;
   padding-top: 1em;
   width: 100%;
@@ -209,21 +210,39 @@ p {
   overflow: hidden;
 }
 
-.github-button {
-  display: block;
-  background: url('../img/GitHub-Mark-Light-32px.png') 0 0 no-repeat;
-  width: 32px;
-  height: 32px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  bottom: 1em;
-  position: absolute;
-}
-
 .project-card-img {
   height: 200px;
   overflow: hidden;
+}
+
+/*
+// -- CONTACT SHEET --
+*/
+
+.section-contact {
+  padding-top: 100px;
+}
+
+.contact-sheet {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 3.125em;
+  line-height: 3em;
+  font-size: 2em;
+}
+
+.contact-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-container i {
+  width: 112px;
+}
+
+.contact-label {
+  display: inline-block;
+  vertical-align: top;
 }
 
 /*
@@ -235,6 +254,22 @@ p {
   color: #888;
   text-align: center;
   padding: 0.5em 2em;
+}
+
+/*
+// -- ICONS --
+*/
+
+.icon-button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 1em;
+  position: absolute;
+  color: white;
 }
 
 /*
