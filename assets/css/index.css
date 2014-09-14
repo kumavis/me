@@ -114,10 +114,10 @@ p {
 .project-card-container {
   /*min-width: 250px;*/
 }
-.project-card-container:hover .project-card-content.back {
+.project-card-container.selected .project-card-content.back {
   -webkit-transform: rotateY(0deg);
 }
-.project-card-container:hover .project-card-content.front {
+.project-card-container.selected .project-card-content.front {
   -webkit-transform: rotateY(-180deg);
 }
 
