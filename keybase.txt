@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/kumavis
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://aaron.kumavis.me
+  * I am kumavis (https://keybase.io/kumavis) on keybase.
+  * I have a public key with fingerprint BB51 BEDF C5B4 BA2F C2A1  38F5 31FF F62B 72A3 B8FF
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "bb51bedfc5b4ba2fc2a138f531fff62b72a3b8ff",
+            "host": "keybase.io",
+            "key_id": "31fff62b72a3b8ff",
+            "uid": "b0939a6d539c8fcecfdb66c63ac29200",
+            "username": "kumavis"
+        },
+        "service": {
+            "hostname": "aaron.kumavis.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1414381425,
+    "expire_in": 157680000,
+    "prev": "fc52b02e979607d043ab9dc5730ba1acfbf8f5e101672ab8b4471d83bf93a91b",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.3
+Comment: https://keybase.io/crypto
+
+yMHjAnicbZFbSBRRGMdX84IbLaKEUcraaRW0bZ377Cxh20ORiIJpD2KynDNzRid1
+Zp292GbSPbLI0AgJiiTSQEyLwK6YdHlYDIIsNEIIMzEShZKIsuiM2Fvn5XD+3+/7
+f5fzfN0amz3BJtZsq83I9CeMjS5FbFVlT5pbATKUGPC1gga8cqmaXofNoKnpYeAD
+CPE0wooq84hDkFFlBtKsV+VZWlVVgUEiA1nkVVXgBvVGyMogNgiGsEcziEYeAU0h
+6n/4yEoAURIrQUHhWUn2qjKWVQUJgiywUGYkhqIsMIRNHTZhyzzSBKNaCLS5ARGj
+moytlq3KqwCEpqF7VjEPkdwgaBphQzYaSbQ+HA76rORwLGjRLRgFVn0CSNMVMjpJ
+iGIzpBk68NGElMOaZUxzNMd6aY7h3QAfDGomDmgWwYuClyLHKoOjxJJsikEUgyVR
+EihRoTgWIkmReZGlEKShrCKVrA/TFC2QXSAv4jiRVrwsUiUWSjQC1mTNugF8HGkT
+1hHLkFanw3DExKDt6ej+JFuC3ZaSnGh9ns2elv7vS1sOp/4pyjpWVX3/ZGq70F8v
+Fs2NXYjHpcwZ/aFZe5Fr7d7ZL9e8XvvSnkGn+BdKl79MA9hT6HDyZ2YqCoEyfqp3
+dNODF6eXlyq6Z2N9xbsMfydOryl1lo8cmH72zjE8Un27r6ts/ri/Ydz/5ugeqWBz
+WnYev3UHXXD+RPON5I4hfvB670D+4mK8EGYVf983dSinZHae0nILJvMyfnbkD/GB
+m4MTP+ITC3t3/woK6ze8dX2ocM67PIlXB650NjpS2+P8tZTg0MfJy0nvJ8tq+ZKu
+7beGv917lZVdOuUyhKSzc3ePfHJeig023JkK8D0lyY+my12PP+dUbkRf6dwt5347
+/gIeqwuo
+=cgG4
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kumavis
+
+==================================================================
